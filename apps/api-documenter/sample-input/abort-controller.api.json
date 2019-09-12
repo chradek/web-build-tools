@@ -1,0 +1,1063 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.3.8",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@azure/abort-controller!",
+  "docComment": "",
+  "name": "@azure/abort-controller",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@azure/abort-controller!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Class",
+          "canonicalReference": "@azure/abort-controller!AbortController:class",
+          "docComment": "/**\n * An AbortController provides an AbortSignal and the associated controls to signal that an asynchronous operation should be aborted.\n *\n * @example\n *\n * // Abort an operation when another event fires const controller = new AbortController(); const signal = controller.signal; doAsyncWork(signal); button.addEventListener('click', () => controller.abort());\n *\n * @example\n *\n * // Share aborter cross multiple operations in 30s // Upload the same data to 2 different data centers at the same time, // abort another when any of them is finished const controller = AbortController.withTimeout(30 * 1000); doAsyncWork(controller.signal).then(controller.abort); doAsyncWork(controller.signal).then(controller.abort);\n *\n * @example\n *\n * // Cascaded aborting // All operations can't take more than 30 seconds const aborter = Aborter.timeout(30 * 1000);\n *\n * // Following 2 operations can't take more than 25 seconds await doAsyncWork(aborter.withTimeout(25 * 1000)); await doAsyncWork(aborter.withTimeout(25 * 1000));\n *\n * @export  @class AbortController  @implements {AbortSignalLike}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class "
+            },
+            {
+              "kind": "Reference",
+              "text": "AbortController"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AbortController",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@azure/abort-controller!AbortController:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `AbortController` class\n *\n * @param  - {AbortSignalLike[]} [parentSignals] The AbortSignals that will signal aborted on the AbortSignal associated with this controller.  @constructor\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "parentSignals"
+                },
+                {
+                  "kind": "Content",
+                  "text": "?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbortSignalLike"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "parentSignals",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@azure/abort-controller!AbortController:constructor(2)",
+              "docComment": "/**\n * Constructs a new instance of the `AbortController` class\n *\n * @param  - {...AbortSignalLike} parentSignals The AbortSignals that will signal aborted on the AbortSignal associated with this controller.  @constructor\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(..."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "parentSignals"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbortSignalLike"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "parentSignals",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 5
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@azure/abort-controller!AbortController#abort:member(1)",
+              "docComment": "/**\n * Signal that any operations passed this controller's associated abort signal to cancel any remaining work and throw an `AbortError`.\n *\n * @memberof AbortController\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "abort"
+                },
+                {
+                  "kind": "Content",
+                  "text": "(): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [],
+              "name": "abort"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@azure/abort-controller!AbortController#signal:member",
+              "docComment": "/**\n * The AbortSignal associated with this controller that will signal aborted when the abort method is called on this controller.\n *\n * @type {AbortSignal}  @memberof AbortController\n *\n * @readonly\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "signal"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbortSignal"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "signal",
+              "propertyTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@azure/abort-controller!AbortController.timeout:member(1)",
+              "docComment": "/**\n * Creates a new AbortSignal instance that will abort after the provided ms.\n *\n * @static  @params {number} ms Elapsed time in milliseconds to trigger an abort.\n *\n * @returns {AbortSignal}\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "timeout"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ms"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbortSignal"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": true,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 8
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "ms",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                }
+              ],
+              "name": "timeout"
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@azure/abort-controller!AbortError:class",
+          "docComment": "/**\n * This error is thrown when an asynchronous operation has been aborted. Check for this error by testing the `name` that the name property of the error matches `\"AbortError\"`.\n *\n * @example\n *\n * const controller = new AbortController(); controller.abort(); try { doAsyncWork(controller.signal) } catch (e) { if (e.name === 'AbortError') { // handle abort error here. } }\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class "
+            },
+            {
+              "kind": "Reference",
+              "text": "AbortError"
+            },
+            {
+              "kind": "Content",
+              "text": " extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Error"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AbortError",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@azure/abort-controller!AbortError:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `AbortError` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "message"
+                },
+                {
+                  "kind": "Content",
+                  "text": "?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "message",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ]
+            }
+          ],
+          "extendsTokenRange": {
+            "startIndex": 3,
+            "endIndex": 5
+          },
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@azure/abort-controller!AbortSignal:class",
+          "docComment": "/**\n * An aborter instance implements AbortSignal interface, can abort HTTP requests.\n *\n * - Call AbortSignal.none to create a new AbortSignal instance that cannot be cancelled. Use `AbortSignal.none` when you are required to pass a cancellation token but the operation cannot or will not ever be cancelled.\n *\n * @example\n *\n * // Abort without timeout await doAsyncWork(AbortSignal.none);\n *\n * @export  @class AbortSignal  @implements {AbortSignalLike}\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class "
+            },
+            {
+              "kind": "Reference",
+              "text": "AbortSignal"
+            },
+            {
+              "kind": "Content",
+              "text": " implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "AbortSignalLike"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AbortSignal",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@azure/abort-controller!AbortSignal:constructor(1)",
+              "docComment": "/**\n * Constructs a new instance of the `AbortSignal` class\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor();"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": []
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@azure/abort-controller!AbortSignal#aborted:member",
+              "docComment": "/**\n * Status of whether aborted or not.\n *\n * @type {boolean}  @memberof AbortSignal\n *\n * @readonly\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "aborted"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "aborted",
+              "propertyTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@azure/abort-controller!AbortSignal#addEventListener:member(1)",
+              "docComment": "/**\n * Added new \"abort\" event listener, only support \"abort\" event.\n *\n * @param  - {\"abort\"} _type Only support \"abort\" event\n *\n * @param  - {(this: AbortSignalLike, ev: any) => any} listener  @memberof AbortSignal\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "addEventListener"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "_type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"abort\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "listener"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbortSignalLike"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ev"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": any) => any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 16,
+                "endIndex": 17
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "_type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  }
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 15
+                  }
+                }
+              ],
+              "name": "addEventListener"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@azure/abort-controller!AbortSignal#dispatchEvent:member(1)",
+              "docComment": "/**\n * Dispatches a synthetic event to the AbortSignal.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "dispatchEvent"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "event"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Event"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 6,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "event",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  }
+                }
+              ],
+              "name": "dispatchEvent"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@azure/abort-controller!AbortSignal.none:member",
+              "docComment": "/**\n * Creates a new AbortSignal instance that will never be aborted.\n *\n * @static  @type {AbortSignal}  @memberof AbortSignal\n *\n * @readonly\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "static readonly "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "none"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbortSignal"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "none",
+              "propertyTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              },
+              "isStatic": true
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@azure/abort-controller!AbortSignal#onabort:member",
+              "docComment": "/**\n * onabort event listener.\n *\n * @memberof AbortSignal\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "onabort"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ev"
+                },
+                {
+                  "kind": "Content",
+                  "text": "?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Event"
+                },
+                {
+                  "kind": "Content",
+                  "text": ") => any) | null"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "onabort",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 7
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@azure/abort-controller!AbortSignal#removeEventListener:member(1)",
+              "docComment": "/**\n * Remove \"abort\" event listener, only support \"abort\" event.\n *\n * @param  - {\"abort\"} _type Only support \"abort\" event\n *\n * @param  - {(this: AbortSignalLike, ev: any) => any} listener  @memberof AbortSignal\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "removeEventListener"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "_type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"abort\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "listener"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbortSignalLike"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ev"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": any) => any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 16,
+                "endIndex": 17
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "_type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  }
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 15
+                  }
+                }
+              ],
+              "name": "removeEventListener"
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 3,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@azure/abort-controller!AbortSignalLike:interface",
+          "docComment": "/**\n * Allows the request to be aborted upon firing of the \"abort\" event. Compatible with the browser built-in AbortSignal and common polyfills.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface "
+            },
+            {
+              "kind": "Reference",
+              "text": "AbortSignalLike"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AbortSignalLike",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/abort-controller!AbortSignalLike#aborted:member",
+              "docComment": "/**\n * Indicates if the signal has already been aborted.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "aborted"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "aborted",
+              "propertyTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 4
+              }
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@azure/abort-controller!AbortSignalLike#addEventListener:member(1)",
+              "docComment": "/**\n * Add new \"abort\" event listener, only support \"abort\" event.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "addEventListener"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"abort\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "listener"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbortSignalLike"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ev"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": any) => any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "options"
+                },
+                {
+                  "kind": "Content",
+                  "text": "?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 20,
+                "endIndex": 21
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  }
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 15
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 18,
+                    "endIndex": 19
+                  }
+                }
+              ],
+              "name": "addEventListener"
+            },
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@azure/abort-controller!AbortSignalLike#removeEventListener:member(1)",
+              "docComment": "/**\n * Remove \"abort\" event listener, only support \"abort\" event.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "removeEventListener"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "\"abort\""
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "listener"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "this"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbortSignalLike"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ev"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": any) => any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "options"
+                },
+                {
+                  "kind": "Content",
+                  "text": "?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Content",
+                  "text": "void"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 20,
+                "endIndex": 21
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "type",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  }
+                },
+                {
+                  "parameterName": "listener",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 15
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 18,
+                    "endIndex": 19
+                  }
+                }
+              ],
+              "name": "removeEventListener"
+            }
+          ],
+          "extendsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}

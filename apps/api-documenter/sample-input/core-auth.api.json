@@ -1,0 +1,644 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.3.8",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@azure/core-auth!",
+  "docComment": "",
+  "name": "@azure/core-auth",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@azure/core-auth!",
+      "name": "",
+      "members": [
+        {
+          "kind": "Interface",
+          "canonicalReference": "@azure/core-auth!AccessToken:interface",
+          "docComment": "/**\n * Represents an access token with an expiration time.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface "
+            },
+            {
+              "kind": "Reference",
+              "text": "AccessToken"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AccessToken",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/core-auth!AccessToken#expiresOnTimestamp:member",
+              "docComment": "/**\n * The access token's expiration timestamp.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "expiresOnTimestamp"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "expiresOnTimestamp",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/core-auth!AccessToken#token:member",
+              "docComment": "/**\n * The access token.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "token"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "token",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@azure/core-auth!GetTokenOptions:interface",
+          "docComment": "/**\n * Defines options for TokenCredential.getToken.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface "
+            },
+            {
+              "kind": "Reference",
+              "text": "GetTokenOptions"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "GetTokenOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/core-auth!GetTokenOptions#abortSignal:member",
+              "docComment": "/**\n * An AbortSignalLike implementation that can be used to cancel the token request.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "abortSignal"
+                },
+                {
+                  "kind": "Content",
+                  "text": "?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AbortSignalLike"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "abortSignal",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/core-auth!GetTokenOptions#spanOptions:member",
+              "docComment": "/**\n * Options to create a span using the tracer if any was set.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "spanOptions"
+                },
+                {
+                  "kind": "Content",
+                  "text": "?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "any"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "spanOptions",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/core-auth!GetTokenOptions#timeout:member",
+              "docComment": "/**\n * Timeout for pinging services\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "timeout"
+                },
+                {
+                  "kind": "Content",
+                  "text": "?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "number"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "timeout",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "@azure/core-auth!isTokenCredential:function(1)",
+          "docComment": "/**\n * Tests an object to determine whether it implements TokenCredential.\n *\n * @param  - credential The assumed TokenCredential to be tested.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function "
+            },
+            {
+              "kind": "Reference",
+              "text": "isTokenCredential"
+            },
+            {
+              "kind": "Content",
+              "text": "("
+            },
+            {
+              "kind": "Reference",
+              "text": "credential"
+            },
+            {
+              "kind": "Content",
+              "text": ": "
+            },
+            {
+              "kind": "Content",
+              "text": "any"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "credential"
+            },
+            {
+              "kind": "Content",
+              "text": " is "
+            },
+            {
+              "kind": "Reference",
+              "text": "TokenCredential"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 10
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 1,
+          "parameters": [
+            {
+              "parameterName": "credential",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "name": "isTokenCredential"
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@azure/core-auth!SimpleTokenCredential:class",
+          "docComment": "/**\n * A TokenCredential that always returns the given token. This class can be used when the access token is already known or can be retrieved from an outside source.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class "
+            },
+            {
+              "kind": "Reference",
+              "text": "SimpleTokenCredential"
+            },
+            {
+              "kind": "Content",
+              "text": " implements "
+            },
+            {
+              "kind": "Reference",
+              "text": "TokenCredential"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SimpleTokenCredential",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@azure/core-auth!SimpleTokenCredential:constructor(1)",
+              "docComment": "/**\n * Creates an instance of TokenCredential.\n *\n * @param  - {string} token\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "token"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "expiresOn"
+                },
+                {
+                  "kind": "Content",
+                  "text": "?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "token",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "expiresOn",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 7,
+                    "endIndex": 8
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@azure/core-auth!SimpleTokenCredential#expiresOn:member",
+              "docComment": "/**\n * The Date at which the token expires. Can be changed to update the expiration time.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "expiresOn"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "expiresOn",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              },
+              "isStatic": false
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@azure/core-auth!SimpleTokenCredential#getToken:member(1)",
+              "docComment": "/**\n * Retrieves the token stored in this RawTokenCredential.\n *\n * @param  - _scopes Ignored since token is already known.\n *\n * @param  - _options Ignored since token is already known.\n *\n * @returns {AccessToken} The access token details.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "getToken"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "_scopes"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "_options"
+                },
+                {
+                  "kind": "Content",
+                  "text": "?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GetTokenOptions"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AccessToken"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 10,
+                "endIndex": 14
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "_scopes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  }
+                },
+                {
+                  "parameterName": "_options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  }
+                }
+              ],
+              "name": "getToken"
+            },
+            {
+              "kind": "Property",
+              "canonicalReference": "@azure/core-auth!SimpleTokenCredential#token:member",
+              "docComment": "/**\n * The raw token string. Can be changed when the token needs to be updated.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "token"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "token",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              },
+              "isStatic": false
+            }
+          ],
+          "implementsTokenRanges": [
+            {
+              "startIndex": 3,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@azure/core-auth!TokenCredential:interface",
+          "docComment": "/**\n * Represents a credential capable of providing an authentication token.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface "
+            },
+            {
+              "kind": "Reference",
+              "text": "TokenCredential"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TokenCredential",
+          "members": [
+            {
+              "kind": "MethodSignature",
+              "canonicalReference": "@azure/core-auth!TokenCredential#getToken:member(1)",
+              "docComment": "/**\n * Gets the token provided by this credential.\n *\n * @param  - scopes The list of scopes for which the token will have access.\n *\n * @param  - options The options used to configure any requests this TokenCredential implementation might make.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "getToken"
+                },
+                {
+                  "kind": "Content",
+                  "text": "("
+                },
+                {
+                  "kind": "Reference",
+                  "text": "scopes"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string | string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "options"
+                },
+                {
+                  "kind": "Content",
+                  "text": "?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GetTokenOptions"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AccessToken"
+                },
+                {
+                  "kind": "Content",
+                  "text": " | null>"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "returnTypeTokenRange": {
+                "startIndex": 10,
+                "endIndex": 14
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "scopes",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 4,
+                    "endIndex": 5
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 8,
+                    "endIndex": 9
+                  }
+                }
+              ],
+              "name": "getToken"
+            }
+          ],
+          "extendsTokenRanges": []
+        }
+      ]
+    }
+  ]
+}
