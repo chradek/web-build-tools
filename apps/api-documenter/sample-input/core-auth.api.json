@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.3.8",
+    "toolVersion": "7.4.2",
     "schemaVersion": 1003,
     "oldestForwardsCompatibleVersion": 1001
   },
@@ -22,15 +22,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export interface "
-            },
-            {
-              "kind": "Reference",
-              "text": "AccessToken"
-            },
-            {
-              "kind": "Content",
-              "text": " "
+              "text": "export interface AccessToken "
             }
           ],
           "releaseTag": "Public",
@@ -42,12 +34,8 @@
               "docComment": "/**\n * The access token's expiration timestamp.\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "expiresOnTimestamp"
-                },
-                {
                   "kind": "Content",
-                  "text": ": "
+                  "text": "expiresOnTimestamp: "
                 },
                 {
                   "kind": "Content",
@@ -61,8 +49,8 @@
               "releaseTag": "Public",
               "name": "expiresOnTimestamp",
               "propertyTypeTokenRange": {
-                "startIndex": 2,
-                "endIndex": 3
+                "startIndex": 1,
+                "endIndex": 2
               }
             },
             {
@@ -71,12 +59,8 @@
               "docComment": "/**\n * The access token.\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "token"
-                },
-                {
                   "kind": "Content",
-                  "text": ": "
+                  "text": "token: "
                 },
                 {
                   "kind": "Content",
@@ -90,8 +74,8 @@
               "releaseTag": "Public",
               "name": "token",
               "propertyTypeTokenRange": {
-                "startIndex": 2,
-                "endIndex": 3
+                "startIndex": 1,
+                "endIndex": 2
               }
             }
           ],
@@ -104,15 +88,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export interface "
-            },
-            {
-              "kind": "Reference",
-              "text": "GetTokenOptions"
-            },
-            {
-              "kind": "Content",
-              "text": " "
+              "text": "export interface GetTokenOptions "
             }
           ],
           "releaseTag": "Public",
@@ -124,16 +100,13 @@
               "docComment": "/**\n * An AbortSignalLike implementation that can be used to cancel the token request.\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "abortSignal"
-                },
-                {
                   "kind": "Content",
-                  "text": "?: "
+                  "text": "abortSignal?: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "AbortSignalLike"
+                  "text": "AbortSignalLike",
+                  "canonicalReference": "@azure/abort-controller!AbortSignalLike:interface"
                 },
                 {
                   "kind": "Content",
@@ -143,8 +116,8 @@
               "releaseTag": "Public",
               "name": "abortSignal",
               "propertyTypeTokenRange": {
-                "startIndex": 2,
-                "endIndex": 3
+                "startIndex": 1,
+                "endIndex": 2
               }
             },
             {
@@ -153,12 +126,8 @@
               "docComment": "/**\n * Options to create a span using the tracer if any was set.\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "spanOptions"
-                },
-                {
                   "kind": "Content",
-                  "text": "?: "
+                  "text": "spanOptions?: "
                 },
                 {
                   "kind": "Content",
@@ -172,8 +141,8 @@
               "releaseTag": "Public",
               "name": "spanOptions",
               "propertyTypeTokenRange": {
-                "startIndex": 2,
-                "endIndex": 3
+                "startIndex": 1,
+                "endIndex": 2
               }
             },
             {
@@ -182,12 +151,8 @@
               "docComment": "/**\n * Timeout for pinging services\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "timeout"
-                },
-                {
                   "kind": "Content",
-                  "text": "?: "
+                  "text": "timeout?: "
                 },
                 {
                   "kind": "Content",
@@ -201,8 +166,8 @@
               "releaseTag": "Public",
               "name": "timeout",
               "propertyTypeTokenRange": {
-                "startIndex": 2,
-                "endIndex": 3
+                "startIndex": 1,
+                "endIndex": 2
               }
             }
           ],
@@ -215,23 +180,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare function "
-            },
-            {
-              "kind": "Reference",
-              "text": "isTokenCredential"
-            },
-            {
-              "kind": "Content",
-              "text": "("
-            },
-            {
-              "kind": "Reference",
-              "text": "credential"
-            },
-            {
-              "kind": "Content",
-              "text": ": "
+              "text": "export declare function isTokenCredential(credential: "
             },
             {
               "kind": "Content",
@@ -243,7 +192,8 @@
             },
             {
               "kind": "Reference",
-              "text": "credential"
+              "text": "credential",
+              "canonicalReference": "@azure/core-auth!~credential"
             },
             {
               "kind": "Content",
@@ -251,7 +201,8 @@
             },
             {
               "kind": "Reference",
-              "text": "TokenCredential"
+              "text": "TokenCredential",
+              "canonicalReference": "@azure/core-auth!TokenCredential:interface"
             },
             {
               "kind": "Content",
@@ -259,8 +210,8 @@
             }
           ],
           "returnTypeTokenRange": {
-            "startIndex": 7,
-            "endIndex": 10
+            "startIndex": 3,
+            "endIndex": 6
           },
           "releaseTag": "Public",
           "overloadIndex": 1,
@@ -268,8 +219,8 @@
             {
               "parameterName": "credential",
               "parameterTypeTokenRange": {
-                "startIndex": 5,
-                "endIndex": 6
+                "startIndex": 1,
+                "endIndex": 2
               }
             }
           ],
@@ -282,19 +233,12 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare class "
+              "text": "export declare class SimpleTokenCredential implements "
             },
             {
               "kind": "Reference",
-              "text": "SimpleTokenCredential"
-            },
-            {
-              "kind": "Content",
-              "text": " implements "
-            },
-            {
-              "kind": "Reference",
-              "text": "TokenCredential"
+              "text": "TokenCredential",
+              "canonicalReference": "@azure/core-auth!TokenCredential:interface"
             },
             {
               "kind": "Content",
@@ -311,15 +255,7 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "constructor("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "token"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
+                  "text": "constructor(token: "
                 },
                 {
                   "kind": "Content",
@@ -327,19 +263,12 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ", "
+                  "text": ", expiresOn?: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "expiresOn"
-                },
-                {
-                  "kind": "Content",
-                  "text": "?: "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "Date"
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
                 },
                 {
                   "kind": "Content",
@@ -352,15 +281,15 @@
                 {
                   "parameterName": "token",
                   "parameterTypeTokenRange": {
-                    "startIndex": 3,
-                    "endIndex": 4
+                    "startIndex": 1,
+                    "endIndex": 2
                   }
                 },
                 {
                   "parameterName": "expiresOn",
                   "parameterTypeTokenRange": {
-                    "startIndex": 7,
-                    "endIndex": 8
+                    "startIndex": 3,
+                    "endIndex": 4
                   }
                 }
               ]
@@ -371,16 +300,13 @@
               "docComment": "/**\n * The Date at which the token expires. Can be changed to update the expiration time.\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "expiresOn"
-                },
-                {
                   "kind": "Content",
-                  "text": ": "
+                  "text": "expiresOn: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "Date"
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
                 },
                 {
                   "kind": "Content",
@@ -390,8 +316,8 @@
               "releaseTag": "Public",
               "name": "expiresOn",
               "propertyTypeTokenRange": {
-                "startIndex": 2,
-                "endIndex": 3
+                "startIndex": 1,
+                "endIndex": 2
               },
               "isStatic": false
             },
@@ -401,20 +327,8 @@
               "docComment": "/**\n * Retrieves the token stored in this RawTokenCredential.\n *\n * @param  - _scopes Ignored since token is already known.\n *\n * @param  - _options Ignored since token is already known.\n *\n * @returns {AccessToken} The access token details.\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "getToken"
-                },
-                {
                   "kind": "Content",
-                  "text": "("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "_scopes"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
+                  "text": "getToken(_scopes: "
                 },
                 {
                   "kind": "Content",
@@ -422,19 +336,12 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ", "
+                  "text": ", _options?: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "_options"
-                },
-                {
-                  "kind": "Content",
-                  "text": "?: "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "GetTokenOptions"
+                  "text": "GetTokenOptions",
+                  "canonicalReference": "@azure/core-auth!GetTokenOptions:interface"
                 },
                 {
                   "kind": "Content",
@@ -442,7 +349,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "Promise"
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
                 },
                 {
                   "kind": "Content",
@@ -450,7 +358,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "AccessToken"
+                  "text": "AccessToken",
+                  "canonicalReference": "@azure/core-auth!AccessToken:interface"
                 },
                 {
                   "kind": "Content",
@@ -463,8 +372,8 @@
               ],
               "isStatic": false,
               "returnTypeTokenRange": {
-                "startIndex": 10,
-                "endIndex": 14
+                "startIndex": 5,
+                "endIndex": 9
               },
               "releaseTag": "Public",
               "overloadIndex": 1,
@@ -472,15 +381,15 @@
                 {
                   "parameterName": "_scopes",
                   "parameterTypeTokenRange": {
-                    "startIndex": 4,
-                    "endIndex": 5
+                    "startIndex": 1,
+                    "endIndex": 2
                   }
                 },
                 {
                   "parameterName": "_options",
                   "parameterTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 9
+                    "startIndex": 3,
+                    "endIndex": 4
                   }
                 }
               ],
@@ -492,12 +401,8 @@
               "docComment": "/**\n * The raw token string. Can be changed when the token needs to be updated.\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "token"
-                },
-                {
                   "kind": "Content",
-                  "text": ": "
+                  "text": "token: "
                 },
                 {
                   "kind": "Content",
@@ -511,16 +416,16 @@
               "releaseTag": "Public",
               "name": "token",
               "propertyTypeTokenRange": {
-                "startIndex": 2,
-                "endIndex": 3
+                "startIndex": 1,
+                "endIndex": 2
               },
               "isStatic": false
             }
           ],
           "implementsTokenRanges": [
             {
-              "startIndex": 3,
-              "endIndex": 5
+              "startIndex": 1,
+              "endIndex": 3
             }
           ]
         },
@@ -531,15 +436,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export interface "
-            },
-            {
-              "kind": "Reference",
-              "text": "TokenCredential"
-            },
-            {
-              "kind": "Content",
-              "text": " "
+              "text": "export interface TokenCredential "
             }
           ],
           "releaseTag": "Public",
@@ -551,20 +448,8 @@
               "docComment": "/**\n * Gets the token provided by this credential.\n *\n * @param  - scopes The list of scopes for which the token will have access.\n *\n * @param  - options The options used to configure any requests this TokenCredential implementation might make.\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "getToken"
-                },
-                {
                   "kind": "Content",
-                  "text": "("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "scopes"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
+                  "text": "getToken(scopes: "
                 },
                 {
                   "kind": "Content",
@@ -572,19 +457,12 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ", "
+                  "text": ", options?: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "options"
-                },
-                {
-                  "kind": "Content",
-                  "text": "?: "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "GetTokenOptions"
+                  "text": "GetTokenOptions",
+                  "canonicalReference": "@azure/core-auth!GetTokenOptions:interface"
                 },
                 {
                   "kind": "Content",
@@ -592,7 +470,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "Promise"
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
                 },
                 {
                   "kind": "Content",
@@ -600,7 +479,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "AccessToken"
+                  "text": "AccessToken",
+                  "canonicalReference": "@azure/core-auth!AccessToken:interface"
                 },
                 {
                   "kind": "Content",
@@ -612,8 +492,8 @@
                 }
               ],
               "returnTypeTokenRange": {
-                "startIndex": 10,
-                "endIndex": 14
+                "startIndex": 5,
+                "endIndex": 9
               },
               "releaseTag": "Public",
               "overloadIndex": 1,
@@ -621,15 +501,15 @@
                 {
                   "parameterName": "scopes",
                   "parameterTypeTokenRange": {
-                    "startIndex": 4,
-                    "endIndex": 5
+                    "startIndex": 1,
+                    "endIndex": 2
                   }
                 },
                 {
                   "parameterName": "options",
                   "parameterTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 9
+                    "startIndex": 3,
+                    "endIndex": 4
                   }
                 }
               ],

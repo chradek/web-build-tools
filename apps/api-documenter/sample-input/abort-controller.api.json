@@ -1,7 +1,7 @@
 {
   "metadata": {
     "toolPackage": "@microsoft/api-extractor",
-    "toolVersion": "7.3.8",
+    "toolVersion": "7.4.2",
     "schemaVersion": 1003,
     "oldestForwardsCompatibleVersion": 1001
   },
@@ -22,15 +22,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare class "
-            },
-            {
-              "kind": "Reference",
-              "text": "AbortController"
-            },
-            {
-              "kind": "Content",
-              "text": " "
+              "text": "export declare class AbortController "
             }
           ],
           "releaseTag": "Public",
@@ -43,19 +35,12 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "constructor("
+                  "text": "constructor(parentSignals?: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "parentSignals"
-                },
-                {
-                  "kind": "Content",
-                  "text": "?: "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "AbortSignalLike"
+                  "text": "AbortSignalLike",
+                  "canonicalReference": "@azure/abort-controller!AbortSignalLike:interface"
                 },
                 {
                   "kind": "Content",
@@ -72,8 +57,8 @@
                 {
                   "parameterName": "parentSignals",
                   "parameterTypeTokenRange": {
-                    "startIndex": 3,
-                    "endIndex": 5
+                    "startIndex": 1,
+                    "endIndex": 3
                   }
                 }
               ]
@@ -85,19 +70,12 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "constructor(..."
+                  "text": "constructor(...parentSignals: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "parentSignals"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "AbortSignalLike"
+                  "text": "AbortSignalLike",
+                  "canonicalReference": "@azure/abort-controller!AbortSignalLike:interface"
                 },
                 {
                   "kind": "Content",
@@ -114,8 +92,8 @@
                 {
                   "parameterName": "parentSignals",
                   "parameterTypeTokenRange": {
-                    "startIndex": 3,
-                    "endIndex": 5
+                    "startIndex": 1,
+                    "endIndex": 3
                   }
                 }
               ]
@@ -126,12 +104,8 @@
               "docComment": "/**\n * Signal that any operations passed this controller's associated abort signal to cancel any remaining work and throw an `AbortError`.\n *\n * @memberof AbortController\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "abort"
-                },
-                {
                   "kind": "Content",
-                  "text": "(): "
+                  "text": "abort(): "
                 },
                 {
                   "kind": "Content",
@@ -144,8 +118,8 @@
               ],
               "isStatic": false,
               "returnTypeTokenRange": {
-                "startIndex": 2,
-                "endIndex": 3
+                "startIndex": 1,
+                "endIndex": 2
               },
               "releaseTag": "Public",
               "overloadIndex": 1,
@@ -159,19 +133,12 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "readonly "
+                  "text": "readonly signal: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "signal"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "AbortSignal"
+                  "text": "AbortSignal",
+                  "canonicalReference": "@azure/abort-controller!AbortSignal:class"
                 },
                 {
                   "kind": "Content",
@@ -181,8 +148,8 @@
               "releaseTag": "Public",
               "name": "signal",
               "propertyTypeTokenRange": {
-                "startIndex": 3,
-                "endIndex": 4
+                "startIndex": 1,
+                "endIndex": 2
               },
               "isStatic": false
             },
@@ -193,23 +160,7 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "static "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "timeout"
-                },
-                {
-                  "kind": "Content",
-                  "text": "("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "ms"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
+                  "text": "static timeout(ms: "
                 },
                 {
                   "kind": "Content",
@@ -221,7 +172,8 @@
                 },
                 {
                   "kind": "Reference",
-                  "text": "AbortSignal"
+                  "text": "AbortSignal",
+                  "canonicalReference": "@azure/abort-controller!AbortSignal:class"
                 },
                 {
                   "kind": "Content",
@@ -230,8 +182,8 @@
               ],
               "isStatic": true,
               "returnTypeTokenRange": {
-                "startIndex": 7,
-                "endIndex": 8
+                "startIndex": 3,
+                "endIndex": 4
               },
               "releaseTag": "Public",
               "overloadIndex": 1,
@@ -239,8 +191,8 @@
                 {
                   "parameterName": "ms",
                   "parameterTypeTokenRange": {
-                    "startIndex": 5,
-                    "endIndex": 6
+                    "startIndex": 1,
+                    "endIndex": 2
                   }
                 }
               ],
@@ -256,19 +208,12 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare class "
+              "text": "export declare class AbortError extends "
             },
             {
               "kind": "Reference",
-              "text": "AbortError"
-            },
-            {
-              "kind": "Content",
-              "text": " extends "
-            },
-            {
-              "kind": "Reference",
-              "text": "Error"
+              "text": "Error",
+              "canonicalReference": "!Error:interface"
             },
             {
               "kind": "Content",
@@ -285,15 +230,7 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "constructor("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "message"
-                },
-                {
-                  "kind": "Content",
-                  "text": "?: "
+                  "text": "constructor(message?: "
                 },
                 {
                   "kind": "Content",
@@ -310,16 +247,16 @@
                 {
                   "parameterName": "message",
                   "parameterTypeTokenRange": {
-                    "startIndex": 3,
-                    "endIndex": 4
+                    "startIndex": 1,
+                    "endIndex": 2
                   }
                 }
               ]
             }
           ],
           "extendsTokenRange": {
-            "startIndex": 3,
-            "endIndex": 5
+            "startIndex": 1,
+            "endIndex": 3
           },
           "implementsTokenRanges": []
         },
@@ -330,19 +267,12 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export declare class "
+              "text": "export declare class AbortSignal implements "
             },
             {
               "kind": "Reference",
-              "text": "AbortSignal"
-            },
-            {
-              "kind": "Content",
-              "text": " implements "
-            },
-            {
-              "kind": "Reference",
-              "text": "AbortSignalLike"
+              "text": "AbortSignalLike",
+              "canonicalReference": "@azure/abort-controller!AbortSignalLike:interface"
             },
             {
               "kind": "Content",
@@ -373,15 +303,7 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "readonly "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "aborted"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
+                  "text": "readonly aborted: "
                 },
                 {
                   "kind": "Content",
@@ -395,8 +317,8 @@
               "releaseTag": "Public",
               "name": "aborted",
               "propertyTypeTokenRange": {
-                "startIndex": 3,
-                "endIndex": 4
+                "startIndex": 1,
+                "endIndex": 2
               },
               "isStatic": false
             },
@@ -406,20 +328,8 @@
               "docComment": "/**\n * Added new \"abort\" event listener, only support \"abort\" event.\n *\n * @param  - {\"abort\"} _type Only support \"abort\" event\n *\n * @param  - {(this: AbortSignalLike, ev: any) => any} listener  @memberof AbortSignal\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "addEventListener"
-                },
-                {
                   "kind": "Content",
-                  "text": "("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "_type"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
+                  "text": "addEventListener(_type: "
                 },
                 {
                   "kind": "Content",
@@ -427,43 +337,20 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ", "
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(this: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "listener"
+                  "text": "AbortSignalLike",
+                  "canonicalReference": "@azure/abort-controller!AbortSignalLike:interface"
                 },
                 {
                   "kind": "Content",
-                  "text": ": "
-                },
-                {
-                  "kind": "Content",
-                  "text": "("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "this"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "AbortSignalLike"
-                },
-                {
-                  "kind": "Content",
-                  "text": ", "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "ev"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": any) => any"
+                  "text": ", ev: any) => any"
                 },
                 {
                   "kind": "Content",
@@ -480,8 +367,8 @@
               ],
               "isStatic": false,
               "returnTypeTokenRange": {
-                "startIndex": 16,
-                "endIndex": 17
+                "startIndex": 7,
+                "endIndex": 8
               },
               "releaseTag": "Public",
               "overloadIndex": 1,
@@ -489,15 +376,15 @@
                 {
                   "parameterName": "_type",
                   "parameterTypeTokenRange": {
-                    "startIndex": 4,
-                    "endIndex": 5
+                    "startIndex": 1,
+                    "endIndex": 2
                   }
                 },
                 {
                   "parameterName": "listener",
                   "parameterTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 15
+                    "startIndex": 3,
+                    "endIndex": 6
                   }
                 }
               ],
@@ -509,24 +396,13 @@
               "docComment": "/**\n * Dispatches a synthetic event to the AbortSignal.\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "dispatchEvent"
-                },
-                {
                   "kind": "Content",
-                  "text": "("
+                  "text": "dispatchEvent(event: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "event"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "Event"
+                  "text": "Event",
+                  "canonicalReference": "!Event:interface"
                 },
                 {
                   "kind": "Content",
@@ -543,8 +419,8 @@
               ],
               "isStatic": false,
               "returnTypeTokenRange": {
-                "startIndex": 6,
-                "endIndex": 7
+                "startIndex": 3,
+                "endIndex": 4
               },
               "releaseTag": "Public",
               "overloadIndex": 1,
@@ -552,8 +428,8 @@
                 {
                   "parameterName": "event",
                   "parameterTypeTokenRange": {
-                    "startIndex": 4,
-                    "endIndex": 5
+                    "startIndex": 1,
+                    "endIndex": 2
                   }
                 }
               ],
@@ -566,19 +442,12 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "static readonly "
+                  "text": "static readonly none: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "none"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "AbortSignal"
+                  "text": "AbortSignal",
+                  "canonicalReference": "@azure/abort-controller!AbortSignal:class"
                 },
                 {
                   "kind": "Content",
@@ -588,8 +457,8 @@
               "releaseTag": "Public",
               "name": "none",
               "propertyTypeTokenRange": {
-                "startIndex": 3,
-                "endIndex": 4
+                "startIndex": 1,
+                "endIndex": 2
               },
               "isStatic": true
             },
@@ -599,28 +468,17 @@
               "docComment": "/**\n * onabort event listener.\n *\n * @memberof AbortSignal\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "onabort"
+                  "kind": "Content",
+                  "text": "onabort: "
                 },
                 {
                   "kind": "Content",
-                  "text": ": "
-                },
-                {
-                  "kind": "Content",
-                  "text": "(("
+                  "text": "((ev?: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "ev"
-                },
-                {
-                  "kind": "Content",
-                  "text": "?: "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "Event"
+                  "text": "Event",
+                  "canonicalReference": "!Event:interface"
                 },
                 {
                   "kind": "Content",
@@ -634,8 +492,8 @@
               "releaseTag": "Public",
               "name": "onabort",
               "propertyTypeTokenRange": {
-                "startIndex": 2,
-                "endIndex": 7
+                "startIndex": 1,
+                "endIndex": 4
               },
               "isStatic": false
             },
@@ -645,20 +503,8 @@
               "docComment": "/**\n * Remove \"abort\" event listener, only support \"abort\" event.\n *\n * @param  - {\"abort\"} _type Only support \"abort\" event\n *\n * @param  - {(this: AbortSignalLike, ev: any) => any} listener  @memberof AbortSignal\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "removeEventListener"
-                },
-                {
                   "kind": "Content",
-                  "text": "("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "_type"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
+                  "text": "removeEventListener(_type: "
                 },
                 {
                   "kind": "Content",
@@ -666,43 +512,20 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ", "
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(this: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "listener"
+                  "text": "AbortSignalLike",
+                  "canonicalReference": "@azure/abort-controller!AbortSignalLike:interface"
                 },
                 {
                   "kind": "Content",
-                  "text": ": "
-                },
-                {
-                  "kind": "Content",
-                  "text": "("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "this"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "AbortSignalLike"
-                },
-                {
-                  "kind": "Content",
-                  "text": ", "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "ev"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": any) => any"
+                  "text": ", ev: any) => any"
                 },
                 {
                   "kind": "Content",
@@ -719,8 +542,8 @@
               ],
               "isStatic": false,
               "returnTypeTokenRange": {
-                "startIndex": 16,
-                "endIndex": 17
+                "startIndex": 7,
+                "endIndex": 8
               },
               "releaseTag": "Public",
               "overloadIndex": 1,
@@ -728,15 +551,15 @@
                 {
                   "parameterName": "_type",
                   "parameterTypeTokenRange": {
-                    "startIndex": 4,
-                    "endIndex": 5
+                    "startIndex": 1,
+                    "endIndex": 2
                   }
                 },
                 {
                   "parameterName": "listener",
                   "parameterTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 15
+                    "startIndex": 3,
+                    "endIndex": 6
                   }
                 }
               ],
@@ -745,8 +568,8 @@
           ],
           "implementsTokenRanges": [
             {
-              "startIndex": 3,
-              "endIndex": 5
+              "startIndex": 1,
+              "endIndex": 3
             }
           ]
         },
@@ -757,15 +580,7 @@
           "excerptTokens": [
             {
               "kind": "Content",
-              "text": "export interface "
-            },
-            {
-              "kind": "Reference",
-              "text": "AbortSignalLike"
-            },
-            {
-              "kind": "Content",
-              "text": " "
+              "text": "export interface AbortSignalLike "
             }
           ],
           "releaseTag": "Public",
@@ -778,15 +593,7 @@
               "excerptTokens": [
                 {
                   "kind": "Content",
-                  "text": "readonly "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "aborted"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
+                  "text": "readonly aborted: "
                 },
                 {
                   "kind": "Content",
@@ -800,8 +607,8 @@
               "releaseTag": "Public",
               "name": "aborted",
               "propertyTypeTokenRange": {
-                "startIndex": 3,
-                "endIndex": 4
+                "startIndex": 1,
+                "endIndex": 2
               }
             },
             {
@@ -810,20 +617,8 @@
               "docComment": "/**\n * Add new \"abort\" event listener, only support \"abort\" event.\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "addEventListener"
-                },
-                {
                   "kind": "Content",
-                  "text": "("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "type"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
+                  "text": "addEventListener(type: "
                 },
                 {
                   "kind": "Content",
@@ -831,55 +626,24 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ", "
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(this: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "listener"
+                  "text": "AbortSignalLike",
+                  "canonicalReference": "@azure/abort-controller!AbortSignalLike:interface"
                 },
                 {
                   "kind": "Content",
-                  "text": ": "
+                  "text": ", ev: any) => any"
                 },
                 {
                   "kind": "Content",
-                  "text": "("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "this"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "AbortSignalLike"
-                },
-                {
-                  "kind": "Content",
-                  "text": ", "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "ev"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": any) => any"
-                },
-                {
-                  "kind": "Content",
-                  "text": ", "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "options"
-                },
-                {
-                  "kind": "Content",
-                  "text": "?: "
+                  "text": ", options?: "
                 },
                 {
                   "kind": "Content",
@@ -899,8 +663,8 @@
                 }
               ],
               "returnTypeTokenRange": {
-                "startIndex": 20,
-                "endIndex": 21
+                "startIndex": 9,
+                "endIndex": 10
               },
               "releaseTag": "Public",
               "overloadIndex": 1,
@@ -908,22 +672,22 @@
                 {
                   "parameterName": "type",
                   "parameterTypeTokenRange": {
-                    "startIndex": 4,
-                    "endIndex": 5
+                    "startIndex": 1,
+                    "endIndex": 2
                   }
                 },
                 {
                   "parameterName": "listener",
                   "parameterTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 15
+                    "startIndex": 3,
+                    "endIndex": 6
                   }
                 },
                 {
                   "parameterName": "options",
                   "parameterTypeTokenRange": {
-                    "startIndex": 18,
-                    "endIndex": 19
+                    "startIndex": 7,
+                    "endIndex": 8
                   }
                 }
               ],
@@ -935,20 +699,8 @@
               "docComment": "/**\n * Remove \"abort\" event listener, only support \"abort\" event.\n */\n",
               "excerptTokens": [
                 {
-                  "kind": "Reference",
-                  "text": "removeEventListener"
-                },
-                {
                   "kind": "Content",
-                  "text": "("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "type"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
+                  "text": "removeEventListener(type: "
                 },
                 {
                   "kind": "Content",
@@ -956,55 +708,24 @@
                 },
                 {
                   "kind": "Content",
-                  "text": ", "
+                  "text": ", listener: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "(this: "
                 },
                 {
                   "kind": "Reference",
-                  "text": "listener"
+                  "text": "AbortSignalLike",
+                  "canonicalReference": "@azure/abort-controller!AbortSignalLike:interface"
                 },
                 {
                   "kind": "Content",
-                  "text": ": "
+                  "text": ", ev: any) => any"
                 },
                 {
                   "kind": "Content",
-                  "text": "("
-                },
-                {
-                  "kind": "Reference",
-                  "text": "this"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "AbortSignalLike"
-                },
-                {
-                  "kind": "Content",
-                  "text": ", "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "ev"
-                },
-                {
-                  "kind": "Content",
-                  "text": ": any) => any"
-                },
-                {
-                  "kind": "Content",
-                  "text": ", "
-                },
-                {
-                  "kind": "Reference",
-                  "text": "options"
-                },
-                {
-                  "kind": "Content",
-                  "text": "?: "
+                  "text": ", options?: "
                 },
                 {
                   "kind": "Content",
@@ -1024,8 +745,8 @@
                 }
               ],
               "returnTypeTokenRange": {
-                "startIndex": 20,
-                "endIndex": 21
+                "startIndex": 9,
+                "endIndex": 10
               },
               "releaseTag": "Public",
               "overloadIndex": 1,
@@ -1033,22 +754,22 @@
                 {
                   "parameterName": "type",
                   "parameterTypeTokenRange": {
-                    "startIndex": 4,
-                    "endIndex": 5
+                    "startIndex": 1,
+                    "endIndex": 2
                   }
                 },
                 {
                   "parameterName": "listener",
                   "parameterTypeTokenRange": {
-                    "startIndex": 8,
-                    "endIndex": 15
+                    "startIndex": 3,
+                    "endIndex": 6
                   }
                 },
                 {
                   "parameterName": "options",
                   "parameterTypeTokenRange": {
-                    "startIndex": 18,
-                    "endIndex": 19
+                    "startIndex": 7,
+                    "endIndex": 8
                   }
                 }
               ],

@@ -1,0 +1,2292 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.4.2",
+    "schemaVersion": 1003,
+    "oldestForwardsCompatibleVersion": 1001
+  },
+  "kind": "Package",
+  "canonicalReference": "@azure/app-configuration!",
+  "docComment": "",
+  "name": "@azure/app-configuration",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "@azure/app-configuration!",
+      "name": "",
+      "members": [
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!AddConfigurationSettingConfig:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type AddConfigurationSettingConfig = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelConfigurationSetting",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "Exclude",
+              "canonicalReference": "!Exclude:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelConfigurationSetting",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", \"key\">>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AddConfigurationSettingConfig",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!AddConfigurationSettingOptions:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type AddConfigurationSettingOptions = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelConfigurationClientCreateOrUpdateConfigurationSettingOptionalParams",
+              "canonicalReference": "@azure/app-configuration!ConfigurationClientCreateOrUpdateConfigurationSettingOptionalParams:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AddConfigurationSettingOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!AddConfigurationSettingsResponse:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type AddConfigurationSettingsResponse = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelCreateOrUpdateConfigurationSettingResponse",
+              "canonicalReference": "@azure/app-configuration!CreateOrUpdateConfigurationSettingResponse:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AddConfigurationSettingsResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Class",
+          "canonicalReference": "@azure/app-configuration!AppConfigurationClient:class",
+          "docComment": "/**\n * Client for the Azure App Configuration service.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare class AppConfigurationClient "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "AppConfigurationClient",
+          "members": [
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@azure/app-configuration!AppConfigurationClient:constructor(1)",
+              "docComment": "/**\n * Initializes a new instance of the AppConfigurationClient class.\n *\n * @param  - connectionString Connection string needed for a client to connect to Azure.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(connectionString: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "connectionString",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Constructor",
+              "canonicalReference": "@azure/app-configuration!AppConfigurationClient:constructor(2)",
+              "docComment": "/**\n * Initializes a new instance of the AppConfigurationClient class.\n *\n * @param  - uri The base URI for the Azure service\n *\n * @param  - credential The credentials to use for authentication.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "constructor(uri: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", credential: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TokenCredential",
+                  "canonicalReference": "@azure/core-auth!TokenCredential:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ");"
+                }
+              ],
+              "releaseTag": "Public",
+              "overloadIndex": 2,
+              "parameters": [
+                {
+                  "parameterName": "uri",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "credential",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@azure/app-configuration!AppConfigurationClient#addConfigurationSetting:member(1)",
+              "docComment": "/**\n * Add a setting into the Azure App Configuration service, failing if it already exists.\n *\n * Example usage:\n * ```ts\n * const result = await client.addConfigurationSetting(\"MyKey\", { label: \"MyLabel\", value: \"MyValue\" });\n * ```\n *\n * @param  - key The name of the key.\n *\n * @param  - configSettings A configuration value.\n *\n * @param  - options Optional parameters for the request.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "addConfigurationSetting(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", configSettings: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AddConfigurationSettingConfig",
+                  "canonicalReference": "@azure/app-configuration!AddConfigurationSettingConfig:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AddConfigurationSettingOptions",
+                  "canonicalReference": "@azure/app-configuration!AddConfigurationSettingOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "AddConfigurationSettingsResponse",
+                  "canonicalReference": "@azure/app-configuration!AddConfigurationSettingsResponse:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "configSettings",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                }
+              ],
+              "name": "addConfigurationSetting"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@azure/app-configuration!AppConfigurationClient#deleteConfigurationSetting:member(1)",
+              "docComment": "/**\n * Delete a setting from the Azure App Configuration service\n *\n * Example usage:\n * ```ts\n * const deletedSetting = await client.deleteConfigurationSetting(\"MyKey\", { label: \"MyLabel\" });\n * ```\n *\n * @param  - key The name of the key.\n *\n * @param  - options Optional parameters for the request.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "deleteConfigurationSetting(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DeleteConfigurationSettingOptions",
+                  "canonicalReference": "@azure/app-configuration!DeleteConfigurationSettingOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "DeleteConfigurationSettingResponse",
+                  "canonicalReference": "@azure/app-configuration!DeleteConfigurationSettingResponse:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "deleteConfigurationSetting"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@azure/app-configuration!AppConfigurationClient#getConfigurationSetting:member(1)",
+              "docComment": "/**\n * Gets a setting from the Azure App Configuration service.\n *\n * Example code:\n * ```ts\n * const setting = await client.getConfigurationSetting(\"MyKey\", { label: \"MyLabel\" });\n * ```\n *\n * @param  - key The name of the key.\n *\n * @param  - options Optional parameters for the request.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "getConfigurationSetting(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GetConfigurationSettingOptions",
+                  "canonicalReference": "@azure/app-configuration!GetConfigurationSettingOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "GetConfigurationSettingResponse",
+                  "canonicalReference": "@azure/app-configuration!GetConfigurationSettingResponse:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 9
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                }
+              ],
+              "name": "getConfigurationSetting"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@azure/app-configuration!AppConfigurationClient#listConfigurationSettings:member(1)",
+              "docComment": "/**\n * Lists settings from the Azure App Configuration service, optionally filtered by label, accept date time or name.\n *\n * Example code:\n * ```ts\n * const allSettingsWithLabel = await client.listConfigurationSettings({ label: \"MyLabel\" });\n * ```\n *\n * @param  - options Optional parameters for the request.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "listConfigurationSettings(options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ListConfigurationSettingsOptions",
+                  "canonicalReference": "@azure/app-configuration!ListConfigurationSettingsOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ListConfigurationSettingsResponse",
+                  "canonicalReference": "@azure/app-configuration!ListConfigurationSettingsResponse:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "listConfigurationSettings"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@azure/app-configuration!AppConfigurationClient#listRevisions:member(1)",
+              "docComment": "/**\n * Lists revisions of a set of keys within the Azure App Configuration service.\n *\n * Example code:\n * ```ts\n * const revisionsForMyKey = await client.listRevisions({ key: [\"MyKey\"] });\n * ```\n *\n * @param  - options Optional parameters for the request.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "listRevisions(options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ListRevisionsOptions",
+                  "canonicalReference": "@azure/app-configuration!ListRevisionsOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ListRevisionsResponse",
+                  "canonicalReference": "@azure/app-configuration!ListRevisionsResponse:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 3,
+                "endIndex": 7
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                }
+              ],
+              "name": "listRevisions"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@azure/app-configuration!AppConfigurationClient#setConfigurationSetting:member(1)",
+              "docComment": "/**\n * Sets the value of a key in the Azure App Configuration service, allowing for an optional etag.\n *\n * @param  - key The name of the key.\n *\n * @param  - configSettings A configuration value.\n *\n * @param  - options Optional parameters for the request.\n *\n * Example code:\n * ```ts\n * let result = await client.setConfigurationSetting(\"MyKey\", { value: \"MyValue\" });\n * ```\n *\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "setConfigurationSetting(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", configSettings: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SetConfigurationSettingConfig",
+                  "canonicalReference": "@azure/app-configuration!SetConfigurationSettingConfig:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SetConfigurationSettingOptions",
+                  "canonicalReference": "@azure/app-configuration!SetConfigurationSettingOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "SetConfigurationSettingResponse",
+                  "canonicalReference": "@azure/app-configuration!SetConfigurationSettingResponse:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "configSettings",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                }
+              ],
+              "name": "setConfigurationSetting"
+            },
+            {
+              "kind": "Method",
+              "canonicalReference": "@azure/app-configuration!AppConfigurationClient#updateConfigurationSetting:member(1)",
+              "docComment": "/**\n * Updates the value of a key in the Azure App Configuration service.\n *\n * Example code:\n * ```ts\n * await client.updateConfigurationSetting(\"MyKey\", { label: \"MyLabel\", value: \"MyValue\" });\n * ```\n *\n * @param  - key The name of the key.\n *\n * @param  - configSettings A configuration value.\n *\n * @param  - options Optional parameters for the request.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "updateConfigurationSetting(key: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", configSettings: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "UpdateConfigurationSettingConfig",
+                  "canonicalReference": "@azure/app-configuration!UpdateConfigurationSettingConfig:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ", options?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "UpdateConfigurationSettingOptions",
+                  "canonicalReference": "@azure/app-configuration!UpdateConfigurationSettingOptions:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": "): "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Promise",
+                  "canonicalReference": "!Promise:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "<"
+                },
+                {
+                  "kind": "Reference",
+                  "text": "UpdateConfigurationSettingResponse",
+                  "canonicalReference": "@azure/app-configuration!UpdateConfigurationSettingResponse:type"
+                },
+                {
+                  "kind": "Content",
+                  "text": ">"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "isStatic": false,
+              "returnTypeTokenRange": {
+                "startIndex": 7,
+                "endIndex": 11
+              },
+              "releaseTag": "Public",
+              "overloadIndex": 1,
+              "parameters": [
+                {
+                  "parameterName": "key",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 1,
+                    "endIndex": 2
+                  }
+                },
+                {
+                  "parameterName": "configSettings",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 3,
+                    "endIndex": 4
+                  }
+                },
+                {
+                  "parameterName": "options",
+                  "parameterTypeTokenRange": {
+                    "startIndex": 5,
+                    "endIndex": 6
+                  }
+                }
+              ],
+              "name": "updateConfigurationSetting"
+            }
+          ],
+          "implementsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@azure/app-configuration!ConfigurationSettingList:interface",
+          "docComment": "/**\n * @interface An interface representing the ConfigurationSettingList.  @extends Array<ConfigurationSetting>\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ConfigurationSettingList extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "Array",
+              "canonicalReference": "!Array:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ConfigurationSetting",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+            },
+            {
+              "kind": "Content",
+              "text": "> "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ConfigurationSettingList",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSettingList#items:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "items?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ConfigurationSetting",
+                  "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": "[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "items",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 5
+            }
+          ]
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!DeleteConfigurationSettingOptions:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type DeleteConfigurationSettingOptions = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelConfigurationClientDeleteConfigurationSettingOptionalParams",
+              "canonicalReference": "@azure/app-configuration!ConfigurationClientDeleteConfigurationSettingOptionalParams:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & "
+            },
+            {
+              "kind": "Reference",
+              "text": "ETagOption",
+              "canonicalReference": "@azure/app-configuration!ETagOption:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DeleteConfigurationSettingOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 4
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!DeleteConfigurationSettingResponse:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type DeleteConfigurationSettingResponse = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelDeleteConfigurationSettingResponse",
+              "canonicalReference": "@azure/app-configuration!DeleteConfigurationSettingResponse:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "DeleteConfigurationSettingResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@azure/app-configuration!ETagOption:interface",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ETagOption "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ETagOption",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ETagOption#etag:member",
+              "docComment": "/**\n * Entity tag (etag) of the object\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "etag?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "etag",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@azure/app-configuration!GetConfigurationSettingHeaders:interface",
+          "docComment": "/**\n * Defines headers for GetConfigurationSetting operation.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface GetConfigurationSettingHeaders "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "GetConfigurationSettingHeaders",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!GetConfigurationSettingHeaders#lastModifiedHeader:member",
+              "docComment": "/**\n * A UTC date/time value generated by the service the last time the resource was modified\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "lastModifiedHeader: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "lastModifiedHeader",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!GetConfigurationSettingOptions:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type GetConfigurationSettingOptions = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelConfigurationClientGetConfigurationSettingOptionalParams",
+              "canonicalReference": "@azure/app-configuration!ConfigurationClientGetConfigurationSettingOptionalParams:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "GetConfigurationSettingOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!GetConfigurationSettingResponse:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type GetConfigurationSettingResponse = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelGetConfigurationSettingResponse",
+              "canonicalReference": "@azure/app-configuration!GetConfigurationSettingResponse:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "GetConfigurationSettingResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!ListConfigurationSettingsOptions:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ListConfigurationSettingsOptions = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelConfigurationClientListConfigurationSettingsOptionalParams",
+              "canonicalReference": "@azure/app-configuration!ConfigurationClientListConfigurationSettingsOptionalParams:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ListConfigurationSettingsOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!ListConfigurationSettingsResponse:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ListConfigurationSettingsResponse = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelListConfigurationSettingsResponse",
+              "canonicalReference": "@azure/app-configuration!ListConfigurationSettingsResponse:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ListConfigurationSettingsResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!ListRevisionsOptions:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ListRevisionsOptions = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelConfigurationClientListRevisionsOptionalParams",
+              "canonicalReference": "@azure/app-configuration!ConfigurationClientListRevisionsOptionalParams:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ListRevisionsOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!ListRevisionsResponse:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ListRevisionsResponse = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelListRevisionsResponse",
+              "canonicalReference": "@azure/app-configuration!ListRevisionsResponse:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ListRevisionsResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@azure/app-configuration!ModelConfigurationClientCreateOrUpdateConfigurationSettingOptionalParams:interface",
+          "docComment": "/**\n * Optional Parameters.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ConfigurationClientCreateOrUpdateConfigurationSettingOptionalParams extends "
+            },
+            {
+              "kind": "Content",
+              "text": "coreHttp."
+            },
+            {
+              "kind": "Reference",
+              "text": "RequestOptionsBase",
+              "canonicalReference": "@azure/core-http!RequestOptionsBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ModelConfigurationClientCreateOrUpdateConfigurationSettingOptionalParams",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationClientCreateOrUpdateConfigurationSettingOptionalParams#label:member",
+              "docComment": "/**\n * Default value: '%00'.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "label?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "label",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@azure/app-configuration!ModelConfigurationClientDeleteConfigurationSettingOptionalParams:interface",
+          "docComment": "/**\n * Optional Parameters.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ConfigurationClientDeleteConfigurationSettingOptionalParams extends "
+            },
+            {
+              "kind": "Content",
+              "text": "coreHttp."
+            },
+            {
+              "kind": "Reference",
+              "text": "RequestOptionsBase",
+              "canonicalReference": "@azure/core-http!RequestOptionsBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ModelConfigurationClientDeleteConfigurationSettingOptionalParams",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationClientDeleteConfigurationSettingOptionalParams#label:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "label?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "label",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@azure/app-configuration!ModelConfigurationClientGetConfigurationSettingOptionalParams:interface",
+          "docComment": "/**\n * Optional Parameters.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ConfigurationClientGetConfigurationSettingOptionalParams extends "
+            },
+            {
+              "kind": "Content",
+              "text": "coreHttp."
+            },
+            {
+              "kind": "Reference",
+              "text": "RequestOptionsBase",
+              "canonicalReference": "@azure/core-http!RequestOptionsBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ModelConfigurationClientGetConfigurationSettingOptionalParams",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationClientGetConfigurationSettingOptionalParams#acceptDateTime:member",
+              "docComment": "/**\n * Obtain representation of the result related to past time.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "acceptDateTime?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "acceptDateTime",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationClientGetConfigurationSettingOptionalParams#label:member",
+              "docComment": "/**\n * Label of key to retreive. Default value: '%00'.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "label?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "label",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@azure/app-configuration!ModelConfigurationClientListConfigurationSettingsOptionalParams:interface",
+          "docComment": "/**\n * Optional Parameters.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ConfigurationClientListConfigurationSettingsOptionalParams extends "
+            },
+            {
+              "kind": "Content",
+              "text": "coreHttp."
+            },
+            {
+              "kind": "Reference",
+              "text": "RequestOptionsBase",
+              "canonicalReference": "@azure/core-http!RequestOptionsBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ModelConfigurationClientListConfigurationSettingsOptionalParams",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationClientListConfigurationSettingsOptionalParams#acceptDateTime:member",
+              "docComment": "/**\n * Obtain representation of the result related to past time.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "acceptDateTime?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "acceptDateTime",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationClientListConfigurationSettingsOptionalParams#fields:member",
+              "docComment": "/**\n * Specify which fields to return\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fields?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fields",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationClientListConfigurationSettingsOptionalParams#key:member",
+              "docComment": "/**\n * Filter returned values based on their keys. '*' can be used as wildcard in the beginning or end of the filter\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "key?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "key",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationClientListConfigurationSettingsOptionalParams#label:member",
+              "docComment": "/**\n * Filter returned values based on their label. '*' can be used as wildcard in the beginning or end of the filter\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "label?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "label",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@azure/app-configuration!ModelConfigurationClientListRevisionsOptionalParams:interface",
+          "docComment": "/**\n * Optional Parameters.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ConfigurationClientListRevisionsOptionalParams extends "
+            },
+            {
+              "kind": "Content",
+              "text": "coreHttp."
+            },
+            {
+              "kind": "Reference",
+              "text": "RequestOptionsBase",
+              "canonicalReference": "@azure/core-http!RequestOptionsBase:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ModelConfigurationClientListRevisionsOptionalParams",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationClientListRevisionsOptionalParams#acceptDateTime:member",
+              "docComment": "/**\n * Obtain representation of the result related to past time.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "acceptDateTime?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "acceptDateTime",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationClientListRevisionsOptionalParams#fields:member",
+              "docComment": "/**\n * Specify which fields to return\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "fields?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fields",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationClientListRevisionsOptionalParams#key:member",
+              "docComment": "/**\n * Filter returned values based on their keys. '*' can be used as wildcard in the beginning or end of the filter\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "key?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "key",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationClientListRevisionsOptionalParams#label:member",
+              "docComment": "/**\n * Filter returned values based on their label. '*' can be used as wildcard in the beginning or end of the filter\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "label?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string[]"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "label",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 1,
+              "endIndex": 4
+            }
+          ]
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "@azure/app-configuration!ModelConfigurationSetting:interface",
+          "docComment": "/**\n * A configuration value\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface ConfigurationSetting "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ModelConfigurationSetting",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationSetting#contentType:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "contentType?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "contentType",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationSetting#etag:member",
+              "docComment": "/**\n * Entity tag (etag) of the object **NOTE: This property will not be serialized. It can only be populated by the server.**\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly etag?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "etag",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationSetting#key:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "key?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "key",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationSetting#label:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "label?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "label",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationSetting#lastModified:member",
+              "docComment": "/**\n * **NOTE: This property will not be serialized. It can only be populated by the server.**\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly lastModified?: "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "Date",
+                  "canonicalReference": "!Date:interface"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "lastModified",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationSetting#locked:member",
+              "docComment": "/**\n * **NOTE: This property will not be serialized. It can only be populated by the server.**\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "readonly locked?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "boolean"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "locked",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationSetting#tags:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "tags?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "{\n        [propertyName: string]: string;\n    }"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "tags",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "@azure/app-configuration!ModelConfigurationSetting#value:member",
+              "docComment": "",
+              "excerptTokens": [
+                {
+                  "kind": "Content",
+                  "text": "value?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "value",
+              "propertyTypeTokenRange": {
+                "startIndex": 1,
+                "endIndex": 2
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!ModelCreateOrUpdateConfigurationSettingResponse:type",
+          "docComment": "/**\n * Contains response data for the createOrUpdateConfigurationSetting operation.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type CreateOrUpdateConfigurationSettingResponse = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ConfigurationSetting",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n    _response: coreHttp."
+            },
+            {
+              "kind": "Reference",
+              "text": "HttpResponse",
+              "canonicalReference": "@azure/core-http!HttpResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n        bodyAsText: string;\n        parsedBody: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ConfigurationSetting",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    };\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ModelCreateOrUpdateConfigurationSettingResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 7
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!ModelDeleteConfigurationSettingResponse:type",
+          "docComment": "/**\n * Contains response data for the deleteConfigurationSetting operation.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type DeleteConfigurationSettingResponse = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ConfigurationSetting",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n    _response: coreHttp."
+            },
+            {
+              "kind": "Reference",
+              "text": "HttpResponse",
+              "canonicalReference": "@azure/core-http!HttpResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n        bodyAsText: string;\n        parsedBody: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ConfigurationSetting",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    };\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ModelDeleteConfigurationSettingResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 7
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!ModelGetConfigurationSettingResponse:type",
+          "docComment": "/**\n * Contains response data for the getConfigurationSetting operation.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type GetConfigurationSettingResponse = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ConfigurationSetting",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & "
+            },
+            {
+              "kind": "Reference",
+              "text": "GetConfigurationSettingHeaders",
+              "canonicalReference": "@azure/app-configuration!GetConfigurationSettingHeaders:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n    _response: coreHttp."
+            },
+            {
+              "kind": "Reference",
+              "text": "HttpResponse",
+              "canonicalReference": "@azure/core-http!HttpResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n        parsedHeaders: "
+            },
+            {
+              "kind": "Reference",
+              "text": "GetConfigurationSettingHeaders",
+              "canonicalReference": "@azure/app-configuration!GetConfigurationSettingHeaders:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n        bodyAsText: string;\n        parsedBody: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ConfigurationSetting",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    };\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ModelGetConfigurationSettingResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 11
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!ModelListConfigurationSettingsResponse:type",
+          "docComment": "/**\n * Contains response data for the listConfigurationSettings operation.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ListConfigurationSettingsResponse = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ConfigurationSettingList",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSettingList:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n    _response: coreHttp."
+            },
+            {
+              "kind": "Reference",
+              "text": "HttpResponse",
+              "canonicalReference": "@azure/core-http!HttpResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n        bodyAsText: string;\n        parsedBody: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ConfigurationSettingList",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSettingList:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    };\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ModelListConfigurationSettingsResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 7
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!ModelListRevisionsResponse:type",
+          "docComment": "/**\n * Contains response data for the listRevisions operation.\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type ListRevisionsResponse = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ConfigurationSettingList",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSettingList:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n    _response: coreHttp."
+            },
+            {
+              "kind": "Reference",
+              "text": "HttpResponse",
+              "canonicalReference": "@azure/core-http!HttpResponse:interface"
+            },
+            {
+              "kind": "Content",
+              "text": " & {\n        bodyAsText: string;\n        parsedBody: "
+            },
+            {
+              "kind": "Reference",
+              "text": "ConfigurationSettingList",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSettingList:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";\n    };\n}"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ModelListRevisionsResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 7
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!SetConfigurationSettingConfig:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type SetConfigurationSettingConfig = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelConfigurationSetting",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "Exclude",
+              "canonicalReference": "!Exclude:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelConfigurationSetting",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", \"key\">>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SetConfigurationSettingConfig",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!SetConfigurationSettingOptions:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type SetConfigurationSettingOptions = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelConfigurationClientCreateOrUpdateConfigurationSettingOptionalParams",
+              "canonicalReference": "@azure/app-configuration!ConfigurationClientCreateOrUpdateConfigurationSettingOptionalParams:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SetConfigurationSettingOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!SetConfigurationSettingResponse:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type SetConfigurationSettingResponse = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelCreateOrUpdateConfigurationSettingResponse",
+              "canonicalReference": "@azure/app-configuration!CreateOrUpdateConfigurationSettingResponse:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "SetConfigurationSettingResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!UpdateConfigurationSettingConfig:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type UpdateConfigurationSettingConfig = "
+            },
+            {
+              "kind": "Reference",
+              "text": "Pick",
+              "canonicalReference": "!Pick:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<"
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelConfigurationSetting",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "Exclude",
+              "canonicalReference": "!Exclude:type"
+            },
+            {
+              "kind": "Content",
+              "text": "<keyof "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelConfigurationSetting",
+              "canonicalReference": "@azure/app-configuration!ConfigurationSetting:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ", \"key\">>"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "UpdateConfigurationSettingConfig",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 9
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!UpdateConfigurationSettingOptions:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type UpdateConfigurationSettingOptions = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelConfigurationClientCreateOrUpdateConfigurationSettingOptionalParams",
+              "canonicalReference": "@azure/app-configuration!ConfigurationClientCreateOrUpdateConfigurationSettingOptionalParams:interface"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "UpdateConfigurationSettingOptions",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        },
+        {
+          "kind": "TypeAlias",
+          "canonicalReference": "@azure/app-configuration!UpdateConfigurationSettingResponse:type",
+          "docComment": "",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare type UpdateConfigurationSettingResponse = "
+            },
+            {
+              "kind": "Reference",
+              "text": "ModelCreateOrUpdateConfigurationSettingResponse",
+              "canonicalReference": "@azure/app-configuration!CreateOrUpdateConfigurationSettingResponse:type"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "UpdateConfigurationSettingResponse",
+          "typeTokenRange": {
+            "startIndex": 1,
+            "endIndex": 2
+          }
+        }
+      ]
+    }
+  ]
+}
