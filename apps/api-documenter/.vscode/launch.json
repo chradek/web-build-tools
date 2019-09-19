@@ -21,6 +21,23 @@
       ],
       "sourceMaps": true,
       "preLaunchTask": "build"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch fast",
+      "program": "${workspaceFolder}\\bin\\api-documenter",
+      "args": [
+        "html",
+        "--input-folder",
+        "${workspaceFolder}/sample-input",
+        "--output-folder",
+        "${workspaceFolder}/doc-output"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/lib/**/*.js"
+      ],
+      "sourceMaps": true
     }
   ]
 }

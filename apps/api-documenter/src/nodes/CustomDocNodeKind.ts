@@ -14,6 +14,7 @@ import { DocTableRow } from './DocTableRow';
  */
 export const enum CustomDocNodeKind {
   EmphasisSpan                  = 'EmphasisSpan',
+  Example                       = 'Example',
   Heading                       = 'Heading',
   NoteBox                       = 'NoteBox',
   Table                         = 'Table',
